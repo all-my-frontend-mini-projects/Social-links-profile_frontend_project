@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --light-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--off-black);
+  color: var(--white);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+/* Profile Container */
+.profile-container {
+  background-color: var(--light-grey);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.profile-container img,
+.profile-details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+}
+
+.profile-container .profile-info,
+.profile-container img,
+.profile-container .text {
+  margin-bottom: 1.5rem;
+}
+
+.profile-container .profile-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-container .profile-info span {
+  color: var(--green);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  background-color: var(--grey);
+  font-family: inherit;
+  color: var(--white);
+  border: none;
+  padding-block: 0.7rem;
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.button:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  background-color: var(--green);
+  color: var(--off-black);
+}
+
+.container {
+  position: relative;
+}
+
+/* Profile details */
+.profile-details {
+  background-color: var(--light-grey);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  padding-top: 0.5rem;
+}
+
+.profile-details .close {
+  background-color: var(--off-black);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.selected-info {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.selected-info p {
+  font-size: 1.1rem;
+}
+
+.selected-info .tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--grey);
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+}
+
+.selected-info .cta {
+  margin-top: 2rem;
+}
+
+.selected-info .cta a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--grey);
+  color: var(--white);
+  padding-block: 0.7rem;
+  width: 100%;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.selected-info .cta a:hover {
+  background-color: var(--green);
+  color: var(--off-black);
+}
+
+.selected-info .author {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+}
+
+/* Details Background color */
+.github {
+  background: linear-gradient(to bottom right, #181717, #000000);
+}
+
+.mentor {
+  background: linear-gradient(to bottom right, #1e1f26, #16171f);
+}
+
+.linkedin {
+  background: linear-gradient(to bottom right, #0077b5, #004b75);
+}
+
+.twitter {
+  background: linear-gradient(to bottom right, #1da1f2, #005691);
+}
+
+.instagram {
+  background: linear-gradient(to bottom right, #bc2a8d, #e95950);
+}
