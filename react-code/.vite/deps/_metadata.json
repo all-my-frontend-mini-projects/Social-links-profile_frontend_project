@@ -1,0 +1,31 @@
+{
+  "hash": "7efd8c52",
+  "configHash": "90090dcc",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "d5121f31",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "f1dc9175",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "67d5db0c",
+      "needsInterop": true
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "8923b552",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-RGWPGAAI": {
+      "file": "chunk-RGWPGAAI.js"
+    }
+  }
+}
